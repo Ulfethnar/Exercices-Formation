@@ -1,0 +1,388 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("../Font/Nunito-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FjallaOne";
+    src: url("../Font/FjallaOne-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Nunito, sans-serif;
+    margin: auto;
+    padding: 0;
+}
+main{
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+h1{
+    font-family: FjallaOne, sans-serif;
+    font-size: 1.66em;
+    color: #CB8606;
+    text-transform: uppercase;
+    text-decoration: double #00748D 5px;
+}
+h2{
+    color: #00748D;
+}
+.bleu{
+    color: #00748D;
+}
+
+.realisations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.25fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 18px 18px;
+    grid-template-areas:
+    "h1 h1 h1 h1 . h2"
+    "bed1 lamp1 deco2 deco1 . temoignages"
+    "lamp2 liv1 deco2 cuis1 . temoignages"
+    "lamp2 cuis3 bed2 cuis2 . h22"
+    "deco3 liv4 liv2 cuis2 . tweets"
+    "off2 liv4 liv3 off1 . tweets";
+    place-items: stretch;
+    margin-bottom: 2em;
+}
+.h1 { grid-area: h1;
+    align-self: center;
+    text-align: center;
+}
+.h2 {
+    align-self: end;
+    grid-area: h2;
+}
+.h22 {
+    align-self: end;
+    grid-area: h22;
+}
+.temoignages { grid-area: temoignages;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.tweets { grid-area: tweets;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: hidden;
+}
+.bed1 {
+    grid-area: bed1;
+    border: #00748D 4px solid;
+}
+.lamp1 {
+    grid-area: lamp1;
+    border: #00748D 4px solid;
+}
+.deco2 {
+    grid-area: deco2;
+    border: #00748D 4px solid;
+}
+.deco1 {
+    grid-area: deco1;
+    border: #00748D 4px solid;
+}
+.liv1 {
+    grid-area: liv1;
+    border: #00748D 4px solid;
+}
+.cuis1 {
+    grid-area: cuis1;
+    border: #00748D 4px solid;
+}
+.lamp2 {
+    grid-area: lamp2;
+    border: #00748D 4px solid;
+}
+.cuis3 {
+    grid-area: cuis3;
+    border: #00748D 4px solid;
+}
+.bed2 {
+    grid-area: bed2;
+    border: #00748D 4px solid;
+}
+.cuis2 {
+    grid-area: cuis2;
+    border: #00748D 4px solid;
+}
+.deco3 {
+    grid-area: deco3;
+    border: #00748D 4px solid;
+}
+.liv4 {
+    grid-area: liv4;
+    border: #00748D 4px solid;
+}
+.liv2 {
+    grid-area: liv2;
+    border: #00748D 4px solid;
+}
+.off2 {
+    grid-area: off2;
+    border: #00748D 4px solid;
+}
+.liv3 {
+    grid-area: liv3;
+    border: #00748D 4px solid;
+}
+.off1 {
+    grid-area: off1;
+    border: #00748D 4px solid;
+}
+.realisations > *{
+    width: 100%;
+}
+
+.temoin1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 990px) and (min-width: 681px) {
+.realisations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+    "h1 h1 h1 h1"
+    "bed1 lamp1 deco2 deco1"
+    "lamp2 liv1 deco2 cuis1"
+    "lamp2 cuis3 bed2 cuis2"
+    "deco3 liv4 liv2 cuis2"
+    "off2 liv4 liv3 off1"
+    ". . . ."
+    "h2 h2 h22 h22"
+    "temoignages temoignages tweets tweets"
+    "temoignages temoignages tweets tweets";
+    place-items: stretch;
+    margin-bottom: 2em;
+    width: 100%;
+}
+    .h1 {
+        grid-area: h1;
+        align-self: center;
+        text-align: center;
+    }
+    .bed1 {
+        grid-area: bed1;
+        border: #00748D 4px solid;
+    }
+    .lamp1 {
+        grid-area: lamp1;
+        border: #00748D 4px solid;
+    }
+    .deco2 {
+        grid-area: deco2;
+        border: #00748D 4px solid;
+    }
+    .deco1 {
+        grid-area: deco1;
+        border: #00748D 4px solid;
+    }
+    .liv1 {
+        grid-area: liv1;
+        border: #00748D 4px solid;
+    }
+    .cuis1 {
+        grid-area: cuis1;
+        border: #00748D 4px solid;
+    }
+    .lamp2 {
+        grid-area: lamp2;
+        border: #00748D 4px solid;
+    }
+    .cuis3 {
+        grid-area: cuis3;
+        border: #00748D 4px solid;
+    }
+    .bed2 {
+        grid-area: bed2;
+        border: #00748D 4px solid;
+    }
+    .cuis2 {
+        grid-area: cuis2;
+        border: #00748D 4px solid;
+    }
+    .deco3 {
+        grid-area: deco3;
+        border: #00748D 4px solid;
+    }
+    .liv4 {
+        grid-area: liv4;
+        border: #00748D 4px solid;
+    }
+    .liv2 {
+        grid-area: liv2;
+
+    }
+    .off2 {
+        grid-area: off2;
+        border: #00748D 4px solid;
+    }
+    .liv3 {
+        grid-area: liv3;
+        border: #00748D 4px solid;
+    }
+    .off1 {
+        grid-area: off1;
+        border: #00748D 4px solid;
+    }
+    .h2 {
+        grid-area: h2;
+        align-self: end;
+    }
+    .h22 {
+        grid-area: h22;
+        align-self: end;
+    }
+    .temoignages {
+        grid-area: temoignages;
+        display: flex;
+        flex-direction: column;
+        max-height: 25%;
+        overflow-y: scroll;
+    }
+    .tweets {
+        display: flex;
+        flex-direction: column;
+        max-height: 60%;
+        overflow-y: hidden;
+    }
+    .realisations > * {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .realisations{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .25fr 1fr 1fr 1fr;
+        gap: 1em 1em;
+        grid-template-areas:
+        "h1 h1"
+        "bed1 lamp1"
+        "deco2 deco1"
+        "deco2 lamp2"
+        "liv1 lamp2"
+        "cuis1 cuis3"
+        "bed2 cuis2"
+        "deco3 cuis2"
+        "liv4 liv2"
+        "liv4 off2"
+        "liv3 off1"
+        "h2 h2"
+        "temoignages temoignages"
+        "temoignages temoignages"
+        ". ."
+        "h22 h22"
+        "tweets tweets"
+        "tweets tweets";
+        place-items: stretch;
+        margin-bottom: 2em;
+    }
+    .h1 {
+        justify-self: center;
+        align-self: center;
+        grid-area: h1;
+    }
+    .bed1 {
+        grid-area: bed1;
+        border: #00748D 1px solid
+    }
+    .lamp1 {
+        grid-area: lamp1;
+        border: #00748D 1px solid
+    }
+    .deco2 {
+        grid-area: deco2;
+        border: #00748D 1px solid
+    }
+    .deco1 {
+        grid-area: deco1;
+        border: #00748D 1px solid
+    }
+    .lamp2 {
+        grid-area: lamp2;
+        border: #00748D 1px solid
+    }
+    .liv1 {
+        grid-area: liv1;
+        border: #00748D 1px solid
+    }
+    .cuis1 {
+        grid-area: cuis1;
+        border: #00748D 1px solid
+    }
+    .cuis3 {
+        grid-area: cuis3;
+        border: #00748D 1px solid
+    }
+    .bed2 {
+        grid-area: bed2;
+        border: #00748D 1px solid
+    }
+    .cuis2 {
+        grid-area: cuis2;
+        border: #00748D 1px solid
+    }
+    .deco3 {
+        grid-area: deco3;
+        border: #00748D 1px solid
+    }
+    .liv4 {
+        grid-area: liv4;
+        border: #00748D 1px solid
+    }
+    .liv2 {
+        grid-area: liv2;
+        border: #00748D 1px solid
+    }
+    .off2 { grid-area: off2;
+        border: #00748D 1px solid
+    }
+    .liv3 { grid-area: liv3;
+        border: #00748D 1px solid
+    }
+    .off1 { grid-area: off1;
+        border: #00748D 1px solid
+    }
+    .h2 {
+        text-align: center;
+        justify-self: center;
+        align-self: end;
+        grid-area: h2;
+    }
+    .temoignages {
+        grid-area: temoignages;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .h22 {
+        grid-area: h22;
+        text-align: center;
+        justify-self: center;
+        align-self: end;
+    }
+    .tweets {
+        grid-area: tweets;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    .realisations > * {
+        width: 100%;
+    }
+
+}
