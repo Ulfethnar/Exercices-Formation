@@ -1,0 +1,63 @@
+html{
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+    width: 80%;
+    background-color: grey;
+}
+h1{
+    color: orangered;
+}
+header{
+    background-color: #444444;
+    color: grey;
+    text-align: center;
+}
+main{
+    border: 1px dotted red;
+}
+.random{
+    background-color: white;
+}
+.sticky{
+    position: sticky;
+    background-color: #f9c;
+    top: 0;
+}
+.static{
+    position: static;
+    background-color: #9c6;
+}
+.relative{
+    position: relative;
+    background-color: #FC3;
+    left: -5em;
+}
+.relativeinabsolute{
+position: relative;
+    background-color: white;
+}
+.relativeinabsolute .BG3{
+    position: absolute;
+    background-color: #F93;
+    top: 0;
+    right: 0;
+    padding: 1em;
+
+}
+.fixed{
+    position: fixed;
+    background-color: #69c;
+    width: 150px;
+    top: 2%;
+    right: 0;
+}
+footer{
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    padding-bottom: 2em;
+}
+span{
+    color: orangered;
+}
