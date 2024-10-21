@@ -1,0 +1,54 @@
+html{
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+    width: 80%;
+    background-color: grey;
+}
+h1{
+    color: orangered;
+}
+header{
+    background-color: #444444;
+    color: grey;
+    text-align: center;
+    border: 1px solid orangered;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.box{
+    width: 240px;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    background-color: #fc3;
+}
+.translate{
+    transform: translate(10%);
+}
+.scale{
+    transform: scale(75%);
+}
+.rotate{
+    transform: rotate(170deg);
+}
+.skew{
+    transform: skew(90deg, 90deg);
+}
+.multiple{
+    transform: scale(110%) rotate(170deg);
+}
+.transition:hover{
+    transform: scale(150%);
+    animation: .3s all ease;
+}
+footer{
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    padding-bottom: 2em;
+}
+span{
+    text-decoration: underline;
+}
