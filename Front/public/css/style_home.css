@@ -1,0 +1,62 @@
+main {
+    background-color: #fff;
+    font-family: "Open Sans";
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+
+
+table {
+    border: solid 1px gray;
+}
+
+.dotted-title {
+    position: relative;
+    padding-right: 120px; /* Espace pour les points et le texte */
+    color: #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.dots,
+.dotss,
+.dots-infinity {
+    display: inline-block;
+    margin-left: 10px;
+    height: 8px;
+    width: 100%;
+    background: radial-gradient(circle, #ddd 50%, transparent 0%);
+    background-size: 12px 8px;
+    background-repeat: repeat;
+    max-width: 100%;
+}
+
+.invisible {
+    display: block; /* Par défaut, l'élément est invisible */
+}
+
+@media screen and (max-width: 990px) and (min-width: 320px) {
+    .invisible {
+        display: none; /* Lorsque l'écran est entre 320px et 990px, l'élément devient invisible */
+    }
+}
