@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Open sans';
+    /* border: 1px solid red; */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+ /* Header */
+  header {
+    background-color: #0c6588;
+    background-image: url("../ressources/img/header.jpg");
+    display: block;
+    background-size: cover;
+    background-position: center;
+    color: #e2f7ff;
+  }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+        .headerTop {
+            background-color: #e2f7ff;
+            width: 100vw;
+            height: auto;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+        }
+            .headerTop p {
+                margin: 0;
+                width: 200px;
+                text-align: center;
+            }
+        .headerMid {
+                width: 100vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid orange;
+            }
+            .blockLogo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                border: 1px solid purple;
+            }
+                .blockLogo img {
+                    width: 75px;
+                    height: auto;
+                    margin-bottom: .5em;
+                }
+                .hiTechNetTitle {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .hiTechNetTitle h1, .hiTechNetTitle p {
+                    margin: 0;
+                }
+                    /* .hiTechNetTitle h1 {
+
+                    }
+                    .hiTechNetTitle p {
+
+                    } */
+            
+            .moduleDeRecherche {
+                display: none;
+            }
+
+
+            .monComptePanier {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 1px solid purple;
+            }
+            .monComptePanier a {
+                text-decoration: none;
+                color: #e2f7ff;
+            }
+                .monCompte , .monPanier {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80px;
+                    border: 1px solid blue;
+                }
+                    .monComptePanier img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .monComptePanier p {
+                        margin: 0;
+                    }
+
+        .menusNav {
+            background-color: #e2f7ff;
+            width: 100vw;
+            height: auto;
+            margin: 0;
+        }
+        .menusNav a {
+            text-decoration: none;
+            color: #0C6588;
+        }
+            .menusMain {
+                /* text-decoration: none; */
+                /* list-style: none; */
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                .deroulant {
+                    margin: 7px;
+                    text-align: center;
+                }
+                .onlyDesktop {
+                    display: none;
+                }
+
+/* Footer */
+    footer {
+        background-color: #333;
+        background-image: url('../ressources/img/footer.jpg');
+        display: block;
+        background-size: cover;
+        background-position: center;
+    }
+    /* .footer * {
+        border: 1px solid red;
+    } */
+        /* Footer nav */
+
+        /* .footerMidContenu */
+        .footerMidContenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid orange;
+        }
+            /* .footerMidContenu h2 {
+                
+            } */
+        .footerMidContenu > div {
+            margin: 0;
+            padding: 0;
+            color: #ddd;
+        }
+            .footerPaiementReseaux {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid red;
+            }
+                .footerMoyenDePaiement {
+                    width: 275px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid violet;
+                }
+                    .footerMoyenDePaiement img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 250px;
+                    }
+                .footerReseauxSociaux {
+                    width: 275px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 25px;
+                    border: 1px solid violet;
+                }
+                    .footerFontAwesome  {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                    } 
+            .footerProposInfos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid green;
+            }
+            .footerProposInfos h2 {
+                margin-bottom: 5px;
+            }
+                .footerAPropos {
+                    width: 275px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid violet;
+                }
+                    .footerAPropos p, .footerAPropos a {
+                        color: #ddd;
+                        margin: 5px;
+                    }
+                    /* .footerAPropos a {
+                        color: white;
+                    } */
+                .footerInfosPratiques {
+                    width: 275px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid violet;
+                }
+                    .footerInfosPratiques p, .footerInfosPratiques a {
+                        color: #ddd;
+                        margin: 5px;
+                    }
+        .footerCopyright {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-align: center;
+            margin: 30px auto;
+        }
+
+/* Font-size/font-family */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 480px) {
+    /* header */
+    .headerTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .headerMid {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .menusNav {
+            display: flex;
+            flex-direction: row;
+        }
+        .menusMain {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: none;
+            justify-content: center;
+        }
+            .deroulant {
+                width: 50vw;
+            }
+
+
+    /* footer : aucun changement nécessaire */
+}
+
+@media screen and (min-width: 960px) {
+    /* header */
+    .headerTop {
+        width: 90%;
+    }
+    .headerMid {
+        width: 90%
+    }
+        .moduleDeRecherche {
+            display: block;
+        }
+    
+    
+
+    /* footer */
+    .footerMidContenu {
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+    }
+        .footerPaiementReseaux {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .footerProposInfos {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+}
