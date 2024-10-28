@@ -11,6 +11,7 @@ h2,
 h3 {
     font-family: "Raleway";
     font-weight: 400;
+    color: #333;
 }
 
 h1 {
@@ -21,6 +22,9 @@ h2 {
     font-size: 24px;
 }
 
+td {
+    color: #555;
+}
 
 
 table {
@@ -29,7 +33,8 @@ table {
 
 .dotted-title {
     position: relative;
-    padding-right: 120px; /* Espace pour les points et le texte */
+    padding-right: 120px;
+    /* Espace pour les points et le texte */
     color: #333;
     font-size: 24px;
     display: flex;
@@ -38,6 +43,8 @@ table {
 }
 
 
+.dotted-title1,
+.dots-title,
 .dots,
 .dotss,
 .dots-infinity {
@@ -51,12 +58,81 @@ table {
     max-width: 100%;
 }
 
-.invisible {
-    display: block; /* Par défaut, l'élément est invisible */
+
+@media screen and (max-width: 960px) and (min-width: 480px) {
+    .invisible {
+        display: none;
+        /* Lorsque l'écran est entre 480px et 960px, l'élément devient invisible */
+    }
+}
+@media screen and (max-width:1140px) and (min-width:959px){
+    .dots,
+.dotss,
+.dots-infinity {
+    display: none;
+    margin-left: 10px;
+    height: 8px;
+    width: 100%;
+    background: radial-gradient(circle, #ddd 50%, transparent 0%);
+    background-size: 12px 8px;
+    background-repeat: repeat;
+    max-width: 100%;
+}
+.dotted-title{
+    width: 50%;
+}
+.dotted-title1{
+   display: flex;
+   align-items: center;
+}
+table{
+    width: 100%;
+}
+.organisation{
+    display: flex;
+}
+.organisation-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+    
+}
+.tag {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+}
+.text{
+    background-color: #eee;
+    padding: 0.6em;
+}
+.triangle {
+    
+    display: flex;
+    border: 30px solid #eee;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 0px solid transparent;
+    
 }
 
-@media screen and (max-width: 990px) and (min-width: 320px) {
-    .invisible {
-        display: none; /* Lorsque l'écran est entre 320px et 990px, l'élément devient invisible */
-    }
+.dots-triangle{
+content: '';
+display: inline-block;
+width: 8px;
+height: 8px;
+margin-right: 1em;
+background-color:white;
+border-radius: 50%;
+box-shadow: 15px 0 0 #ddd,
+    /* Premier point : décalé de 15px à droite, pas de flou, couleur #ddd */
+    30px 0 0 #ddd,
+}  
+
+.content-triangle{
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+    gap: 1em;
 }
